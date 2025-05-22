@@ -18,7 +18,7 @@ const Profile = () => {
         setProfileData(JSON.parse(storedUserData));
       }
       try {
-        const response = await axios.get('http://localhost:5002/api/users/api/profile', {
+        const response = await axios.get('https://buy-sell-zwmw.onrender.com/api/users/api/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
