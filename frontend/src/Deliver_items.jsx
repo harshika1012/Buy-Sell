@@ -19,7 +19,7 @@ const Deliver_items = () => {
         const userData = localStorage.getItem('userData');
         const parsedUserData = JSON.parse(userData);
         const sellerId = parsedUserData._id;
-        const response = await axios.get(`http://localhost:5002/api/users/api/seller/orders/${sellerId}`, {
+        const response = await axios.get(`https://buy-sell-zwmw.onrender.com/api/users/api/seller/orders/${sellerId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -47,7 +47,7 @@ const Deliver_items = () => {
       console.log("Item ID:", actualID._id);
       const storedOtp = localStorage.getItem(`otp_${actualID._id}`);
       console.log("Stored OTP:", storedOtp);
-      const response = await axios.post(`http://localhost:5002/api/users/api/verify-otp`, {
+      const response = await axios.post(`https://buy-sell-zwmw.onrender.com/api/users/api/verify-otp`, {
         orderId,
         itemId,
         otp: storedOtp,
