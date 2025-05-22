@@ -1,0 +1,161 @@
+/* General container styling */
+.deliver-items-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(44, 43, 43, 0.5); /* Semi-transparent dark background */
+    color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+  }
+
+  .item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/* 
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} */
+
+@media (max-width:764px){
+  .deliver-items-container {
+    width: 90%;
+    font-size: small;
+  }
+}
+  /* Title styling */
+  .deliver-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* No orders message styling */
+  .no-orders-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  /* Orders list styling */
+  .orders-list {
+    background-color: rgba(35, 31, 31, 0.5);
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .order-card {
+    background-color: rgba(48, 49, 49, 0.8);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .order-id {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .order-detail {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #cccccc;
+  }
+  
+  /* Items list styling */
+  .items-list {
+
+    width: 70%;
+    height: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: 'transparent';
+  }
+  
+  @media (max-width:764px){
+    .items-list{
+      width: 90%;
+    }
+  }
+  .item-card {
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: rgba(38, 38, 38, 0.9);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .item-detail {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #dddddd;
+  }
+  
+  /* OTP input styling */
+  .otp-input {
+    width: 40%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #222;
+    color: #f0f0f0;
+  }
+  
+  /* Verify button styling */
+  .verify-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Verification result styling */
+  .verification-result {
+    color: #4CAF50;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* All verified message styling */
+  .all-verified-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: yellow;
+    margin-top: 20px;
+  }

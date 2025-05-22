@@ -1,0 +1,119 @@
+/* General container styling */
+.login-container {
+    background: url('/images/i/3d-rendering-abstract-black-white-background_23-2150913923.avif') no-repeat center center fixed; /* Add your image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background-color: rgba(42, 37, 37, 0.5); /* Semi-transparent black background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    color: white;
+    text-align: left;
+  }
+  
+  /* Form input styling */
+  .login-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Input focus effect */
+  .login-box input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Label styling */
+  .login-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Submit button styling */
+  .login-box button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Logout button styling */
+  .logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(228, 221, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: darkred;
+  }
+  
+  /* Error message styling */
+  .login-box p {
+    font-size: 0.9rem;
+    color: rgb(236, 226, 226);
+    margin-top: -5px;
+  }
+  
+  /* Link styling */
+  .login-box a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .login-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .login-box {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .login-box input {
+      font-size: 0.9rem;
+    }
+  
+    .login-box button {
+      font-size: 0.9rem;
+    }
+  }

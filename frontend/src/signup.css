@@ -1,0 +1,105 @@
+  /* General container styling */
+.signup-container {
+    background: url('/images/i/3d-rendering-abstract-black-white-background_23-2150913923.avif') no-repeat center center fixed; /* Add your image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text for better contrast */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Signup box styling */
+  .signup-box {
+    background-color: rgba(90, 87, 87, 0.257); /* Semi-transparent black background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 650px;
+    height: 90vh;
+    /* max-height: 800px; */
+    text-align: left;
+  }
+  
+  /* Form input styling */
+  .signup-box input {
+    width: 80%;
+    padding: 6px;
+    /* margin: 10px 0; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Input focus effect */
+  .signup-box input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Label styling */
+  .signup-box label {
+    font-weight: bold;
+    /* margin-bottom: 5px; */
+    display: block;
+  }
+  
+  /* Button styling */
+  .signup-box button {
+    width: 80%;
+    /* padding: 10px; */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .signup-box p {
+    font-size: 0.9rem;
+    color: rgb(218, 237, 239);
+    /* margin-top: -5px; */
+  }
+  
+  /* Link styling */
+  .signup-box a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .signup-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .signup-container {
+        background: url('/images/i/3d-rendering-abstract-black-white-background_23-2150913923.avif') no-repeat center center fixed;
+        background-size: cover;
+      }
+    .signup-box {
+      padding: 20px;
+      max-width: 80%;
+    }
+  
+    .signup-box input {
+      font-size: 0.9rem;
+    }
+  
+    .signup-box button {
+      font-size: 0.9rem;
+    }
+  }

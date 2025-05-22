@@ -1,0 +1,122 @@
+/* General container styling */
+.item-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
+  color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Box for item details */
+.item-detail-box {
+  background-color: rgba(48, 49, 49, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Item image styling */
+.item-image {
+  width: 45%;
+  /* max-width: 300px; */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Heading styling */
+.item-detail-heading {
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+.item-detail-label {
+  color: #888;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Buttons container */
+.item-detail-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+.add-to-cart-button, .go-to-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049;
+}
+
+.go-to-cart-button {
+  background-color: #007BFF;
+}
+
+.go-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message styling */
+.item-detail-message {
+  color: yellow;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .item-detail-container {
+    padding: 15px;
+  }
+
+  .item-detail-box {
+    width: 90%;
+  }
+
+  .item-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .add-to-cart-button, .go-to-cart-button {
+    width: 100%; /* Full-width buttons on smaller screens */
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-detail-heading {
+    font-size: 1.2rem;
+  }
+
+  .item-detail-label {
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart-button, .go-to-cart-button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

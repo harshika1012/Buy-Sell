@@ -1,0 +1,125 @@
+/* General container styling */
+
+/* No orders box styling */
+.no-orders-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust height as needed */
+  background-color: rgba(48, 49, 49, 0.8); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+.no-orders-message {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.order-history-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent dark background */
+    color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .order-history-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  /* Flexbox layout for columns */
+  .order-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Individual column styling */
+  .order-column {
+    flex: 1;
+    background-color: rgba(48, 49, 49, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    max-height: 500px; /* Optional: Limit height with scroll */
+  }
+  
+  /* Section title styling */
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+  }
+  
+  /* Order list styling */
+  .order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-card {
+    background-color: rgba(38, 38, 38, 0.9);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .order-id {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .order-detail, .item-detail {
+    font-size: 0.8rem; /* Decreased font size */
+    margin-bottom: 5px;
+    color: #cccccc;
+  }
+  
+  /* No items message styling */
+  .no-items-message {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .order-columns {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .order-column {
+      margin-bottom: 20px;
+    }
+  
+    .order-history-title {
+      font-size: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 1rem;
+    }
+  
+    .order-id, .order-detail, .item-detail {
+      font-size: 0.7rem;
+    }
+  }
