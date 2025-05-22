@@ -18,7 +18,7 @@ function My_Cart() {
         const userData = localStorage.getItem('userData');
         const parsedUserData = JSON.parse(userData);
         setUserId(parsedUserData._id); // Set userId state
-        const response = await axios.get(`http://localhost:5002/api/users/api/cart/${parsedUserData._id}`, {
+        const response = await axios.get(`https://buy-sell-zwmw.onrender.com/api/users/api/cart/${parsedUserData._id}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -35,7 +35,7 @@ function My_Cart() {
   const handleRemoveFromCart = async (itemId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete('http://localhost:5002/api/users/api/cart', {
+      await axios.delete('https://buy-sell-zwmw.onrender.com/api/users/api/cart', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ function My_Cart() {
     try {
       const token = localStorage.getItem('token');
       // const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate a random OTP
-      const response = await axios.post('http://localhost:5002/api/users/api/order', {
+      const response = await axios.post('https://buy-sell-zwmw.onrender.com/api/users/api/order', {
         userId,
       }, {
         headers: {
