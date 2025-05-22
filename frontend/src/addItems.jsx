@@ -46,7 +46,7 @@ function AddItems () {
                 formData.append('image', image); // Append the image file
             }
 
-            const response = await axios.post('http://localhost:5002/api/users/api/items', formData, {
+            const response = await axios.post('https://buy-sell-zwmw.onrender.com/api/users/api/items', formData, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'multipart/form-data', // Set the content type for file uploads
