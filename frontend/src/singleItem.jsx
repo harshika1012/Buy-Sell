@@ -15,7 +15,7 @@ const ItemDetail = () => {
     const fetchItem = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get(`http://localhost:5002/api/users/api/items/${id}`, {
+        const response = await axios.get(`https://buy-sell-zwmw.onrender.com/api/users/api/items/${id}`, {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ const ItemDetail = () => {
         setMessage("Seller and Buyer are same, can't add!!!");
       }
       else{
-      const response = await axios.post('http://localhost:5002/api/users/api/cart', {
+      const response = await axios.post('https://buy-sell-zwmw.onrender.com/api/users/api/cart', {
         userId,
         itemId: item._id
       }, {
