@@ -18,7 +18,7 @@
           const userData = localStorage.getItem('userData');
           const parsedUserData = JSON.parse(userData);
           const userId = parsedUserData._id;
-          const response = await axios.get(`http://localhost:5002/api/users/api/orders/${userId}`, {
+          const response = await axios.get(`https://buy-sell-zwmw.onrender.com/api/users/api/orders/${userId}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -40,7 +40,7 @@
           const userData = localStorage.getItem('userData');
           const parsedUserData = JSON.parse(userData);
           const userId = parsedUserData._id;
-          const response = await axios.get(`http://localhost:5002/api/users/api/delivered/${userId}`, {
+          const response = await axios.get(`https://buy-sell-zwmw.onrender.com/api/users/api/delivered/${userId}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
