@@ -2,7 +2,7 @@ import axios from 'axios';
 import bcrypt from 'bcryptjs';
 import { data } from 'react-router-dom';
 
-const API_BASE_URL = 'http://localhost:5002'; // Replace with your base URL
+const API_BASE_URL = 'https://buy-sell-zwmw.onrender.com'; // Replace with your base URL
 
 export const SendPostRequest = async (endpoint, Logindata) => {
   try {
