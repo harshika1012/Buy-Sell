@@ -17,7 +17,7 @@ const ItemList = () => {
         const fetchItems = async () => {
             const token = localStorage.getItem('token');
             try {
-                const response = await axios.get('http://localhost:5002/api/users/api/items', {
+                const response = await axios.get('https://buy-sell-zwmw.onrender.com/api/users/api/items', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
